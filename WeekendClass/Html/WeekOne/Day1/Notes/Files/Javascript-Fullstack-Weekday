@@ -1,0 +1,530 @@
+TechstudioAcademy JavaScript FullStack (Week Day)
+Syllabus
+
+Summary
+1.Introduction To HTML:
+2.Introduction To CSS:
+3.Introduction To Javascript:
+4.Version Control with GitHub:
+5.The React Library:
+6.Node js:
+7.Express:
+8.Deployment
+Tip: Think about how you will INSPIRE your students and consider what you want them to take away from today’s lesson plan.
+Implementation
+Learning Context
+Tip: Have your students learned everything they need to know in order to complete this lesson? This might be a good time to review some previous lessons so that they feel prepared to learn something exciting and new!
+Procedure
+a.Time Allotment:
+Tip: Ensure 5-6 hours of teaching.
+b.Anticipatory Set
+Tip: Do something to really GRAB their attention! Find a web application with explanations of the concept being taught. E.g. Teaching flexbox and showing its usage in a Navbar design.
+b.Direct Instruction
+c.Guided Practice
+d.Check for Understanding
+Tip: Ask lots of questions throughout your lesson to make sure that your students are feeling comfortable with all of this exciting new information.
+e.Independent Practice
+f.Closing
+Tip: This is the perfect opportunity to open up the class for a group discussion. Ask your students questions that help them realize the importance of today’s lesson with questions like, “how will you use this information in your projects?”
+Differentiated Instruction
+Tip: Try to keep in mind that people learn in many different ways. By consciously thinking about this, you’ll be able to use different teaching techniques to reach as many students as possible in your classroom!
+a.Visual Learners
+b.Auditory Learners
+c.Slow Learners
+d.Advanced Learners
+Materials & Resources
+Tip: When choosing supplementary materials and resources for your class, try to put yourself in the shoes of your students. Find resources that ENHANCE your lesson and make your instruction an inviting learning experience for your class!
+a.Instructional Materials:
+b.Resources:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UNIT 1: Introduction To HTML And CSS OBJECTIVES
+HTML
+● Decide between a variety of text editors for writing codes
+● Identify the parts that make up an HTML
+● Determine when to use specific HTML tags
+● Correctly structure nested HTML content
+● Identify the benefit of separating style from content
+CSS
+● Use CSS to style a website
+●  Test styles by manipulating CSS properties
+● Use CSS references to lookup standard CSS properties and values
+● Styling a Form with CSS
+Bootstrap
+● Responsive Design Concepts With Bootstrap
+● Create a responsive web page that works well on any device: phone, tablet, desktop or anything in between.
+● Explore what makes a site responsive and how some common responsive design patterns work across different devices.
+● Create your own responsive layout using the `viewport` tag and CSS media queries.
+● Experiment with major and minor breakpoints.
+● Build HTML elements for any screen size.
+● Use the browser viewport to create consistent user experiences.
+● Use media queries and breakpoints to create responsive web page designs.
+● Bootstrap classes.
+● Using Bootstrap’s Grid System (Containers, Rows, & Columns).
+● Creating Colums & Adding Content.
+● Adjusting Column Sizes Across Screen Sizes.
+● Nesting Grids
+● Changing the Layout Across Screen Sizes
+● Using Some of Bootstrap’s Components & Pre-Made Styles
+● Adding Navbar and Other Components.
+● Showing & Hiding Elements at Specific Sizes
+UNIT 2: JAVASCRIPT BASIC
+In this part, you’ll understand the basic principles of the most used programming language on the web – JavaScript. At the end of this, you’ll be comfortable WRITING pure JavaScript codes.
+Javascript
+● Storing and Tracking Information with Variables.
+● Understanding the Datatypes in Javascript
+● Using and understanding all the Operators
+● Conditional Statements
+● What is an Arrays
+● Accessing, adding, removing Items in an Array
+● Useful Array methods
+● Loops and Type of loops
+● Simplify Repetitive Tasks with Loops
+● Variable Scope
+● Creating Functions
+● Getting and Giving information to and from Functions
+● ES6 Functions
+● Learn a number of new things including arrow functions and classes.
+UNIT 3: Object-Oriented JavaScript
+Objects in JavaScript encapsulate both data and functionality. You'll create, access, and modify objects to build a solid foundation for object- oriented programming.
+Objects
+● Creating Objects
+● Access an object's properties
+● Create objects using object literal notation
+● Add properties to objects
+● Write methods to access an object with the this keyword
+● Compare an object with another object
+● Identify global variables as properties of the window object
+● Identify the risks of using global variables
+● Extract properties and values from an object
+Classes
+● Model real-world "things" using object-oriented programming
+● Write a constructor function to instantiate objects
+● Identify various ways a function can be invoked, including each approach's effect on the value of this
+● Leverage call , apply , and bind to manually set the value of this
+● Access and add properties to an object's prototype
+● Implement prototypal inheritance to base an object on another object
+UNIT 4: The DOM
+● What is the DOM?
+● Select a Page Element By Its ID
+● Select All Elements of a Particular Type
+● Selecting Elements with the Same Class Name
+● Using CSS Queries to Select Page Elements
+DOM and DOM Transversal
+● Getting and Setting Text with textContent and innerHTML
+● Styling Elements
+● Creating New DOM Elements
+● Appending and removing Nodes
+Responding to User Interaction
+● What is an Event?
+● Functions as Parameters
+● Delaying Execution with setTimeout()
+● Listening for Events with addEventListener()
+● The Event Object
+UNIT 5: The REACT Library
+What is React
+● Why React was built?
+● Use react components to build complex functions from simple ones
+● Recognize that React is just JavaScript
+Rendering UI with React
+● Leverage JSX to describe UI
+● Use create-react-app to create a new React application
+● Create reusable, focused function components
+State Management
+● Create reusable, focused function components
+● Leverage JSX to describe UI
+● Manage state in applications
+● Use props to pass data into a component
+● Create functional components focused on UI rather than behavior
+● Add state to components to represent mutable internal data
+● React Hooks
+● Update state with useState()
+● Using useEffect()
+● Use PropTypes to typecheck and debug components
+● Use controlled components to manage input form elements
+● Conceptualize the lifecycle of a component
+● Use React's fetch API hook for HTTP requests
+Manage App Location with React Router Dom
+● Use React Router to add different routes to applications
+● Use state to dynamically render a different "page"
+● Use React Router's Route component
+● Use React Router's Link component
+UNIT 6: Version Control and Deployment
+Version Control, Git & GitHub
+● You'll learn about the benefits of version control and install the version control tool Git!
+● Create a new repository from scratch
+● Review an existing Git repository's history of commits.
+● View files that have been modified.
+● View changes that have been made.
+● Make commits that are saved to the repository.
+● Write descriptive commit messages.
+● Verify the changes you're about to save to the repository.
+● Add special markers called tags to commits.
+● Work on isolated development tracks by making use of Git's branches.
+● Combine branches together.
+● Modify or undo changes that have been saved to a repository.
+● Create remote repositories on GitHub.
+● Get and send changes to a remote repository.
+● Cloning an existing repository.
+● Create copies of a project by forking another developer’s repository.
+● Collaborate with other developers by contributing to a public project.
+● Leverage pull requests to send suggested changes to another developer.
+● Move or combine commits with `git rebase`.
+UNIT 7: NODE JS
+NodeJs is a backend or server-side framework that uses JavaScript code outside a web browser.
+Server-side JavaScript is becoming more prevalent in the industry, with web frameworks such as Node.js and Express making it simple to create and deploy complex, data-driven web applications. This course will prepare you to use such frameworks and show you how to integrate them with NoSQL databases such as MongoDB.
+● Client-Side Frameworks for Developing Modular Web Page Components
+● Building Scalable Web Apps with Server-Side JavaScript
+● Collecting form data from the front-end
+● Create, Edit, Update and Delete data in your database
+UNIT 8: Deployment
+Deploying to a production environment
+● Deploying with github
+● Deploying the netlify
+● Deploying to Heroku
+
+
+
+
+
+
+
+
+
+WEEK ONE
+Introduction To HTML:
+● Brief history of the Web
+● Elements
+● Tags
+● Attributes
+● Class activity– https://codepen.io/w3devcampus/pen/pPaPXZ
+● Class activity – https://codepen.io/w3devcampus/pen/OmvMba
+● Images
+● Hyperlinks
+Introduction to CSS:
+● Introduction To CSS
+● Thestyleandlinktags
+● Selectors and Declarators
+● ID and Classes
+● Properties and Values
+WEEKLY ASSIGNMENT
+
+WEEK TWO
+Common CSS properties–
+● font-size
+● line-height
+● text-align
+● text-decoration
+● font-weight
+● font-style and
+● font-family.
+● Colors
+● Units
+● Class Activity - https://codepen.io/w3devcampus/pen/YVeQZN
+● Combining selectors
+● Descendant selectors
+● Precedence
+● Class Activity
+● The CSS box model
+● Margins, Paddings and Borders
+● CSS Flexbox
+● Debugging
+● Tables (HTML and Styling)
+● Background images and stylings
+● Decorative borders and shadows
+● Class Activity
+● Pseudo classes
+● The Position properties
+● Forms Styling
+WEEKLY ASSIGNMENT
+
+WEEK THREE
+Bootstrap v5.2
+● Deploying to a production environment
+● Introduction To Bootstrap
+● Downloading files and using CDN
+● Containers
+● Understanding the bootstrap grid system
+● Bootstrap classes
+● Activities
+● Project
+Version Control, Git & GitHub
+● Git (the version control software GitHub is built on)
+● Github:
+○Create remote repositories on GitHub.
+● Repositories:
+○CreatingnewRepo
+○Cloning Repo
+● Branches:
+○Work on isolated development tracks by making use of Git's branches.
+○Combine branches together.
+● Commits:
+○Write descriptive commit messages.
+○Make commits that are saved to the repository.
+● Pull Requests:
+○Collaborate with other developers by contributing to a public project.
+○Leverage pull requests to send suggested changes to another developer.
+● Deployment
+WEEKLY ASSIGNMENT
+
+WEEK FOUR
+● PRESENTATION
+● Introduction to JavaScript
+● Variables:
+○Creating and naming variables
+● Data-types:
+○Strings
+○Numbers
+○Booleans
+○Null
+○Undefined
+○Arrays
+○Objects
+● String properties and Methods:
+○Length property
+○toUpperCase
+○toLowerCase
+○indexOf
+○Slice
+● Concatenation:
+○Combining strings and Variables
+○Template Literals
+● Number data-types:
+○Learn about number operators:
+● Math operators:
+○Addition, Subtraction, Multiplication, Division
+○Incremental
+○Decremental
+● Comparison Operators:
+○Determining equality and differences between variables
+○Greater than >
+○Less than <
+○Equal to == ===
+● Logical Operators:
+○Determining the logic between variables and values
+○Logical And &&
+○Logical Or ||
+○Logical Not !
+● Conditional Statements:
+○Introducing Conditional Statements
+○If else Statement
+○Ternary Operators
+○Switch Statements
+● Assignments
+
+WEEK FIVE
+● Arrays:
+○What is an Array?
+○Accessing, adding, removing Items in an Array
+○Using For Loops with Arrays
+○Useful Array Methods:
+■Pop and Push
+■Shift and Unshift o
+■IndexOf
+■Concat
+■Spread operators
+● LOOPs:
+○Simplify Repetitive Tasks with Loops
+○For Loops
+○`do ... while` Loops
+○While Loop
+○Exiting Loops
+● Introduction to Functions:
+○Introducing Functions Variable Scope
+○Types of Functions:
+■Function Declarations
+■Function Expression
+■ES6 Arrow Function
+○Getting Information From a Function
+○Giving Information to Functions
+○Callback function
+● Class Activities
+● Objects:
+○Access an object's properties
+○Create objects using object literal notation
+○Add properties to objects
+○Remove properties from objects using the delete operator
+○Write methods to access an object with the this keyword
+○Compare an object with another object
+○Identify global variables as properties of the window object
+○Identify the risks of using global variables
+○Extract properties and values from an object
+● More Array Methods:
+○ForEach o
+○Map
+○Filter
+○Includes o
+○Find
+○Reduce
+● WEEKLY ASSIGNMENTS
+
+WEEK SIX
+● JavaScript Classes
+○Model real-world "things" using object-oriented programming Write a constructor function to instantiate objects
+○Identify various ways a function can be invoked, including each approach's effect on the value of this
+○Leverage call , apply , and bind to manually set the value of this Access and add properties to an object's prototype
+○Implement prototypal inheritance to base an object on another object
+● Welcome to the DOM:
+○What is the DOM?
+○Select a Page Element By Its ID
+○Select All Elements of a Particular Type
+○Selecting Elements with the Same Class Name
+○Using CSS Queries to Select Page Elements
+● DOM and DOM Transversal:
+○Getting and Setting Text with textContent and innerHTML
+○Styling Elements
+○Creating New DOM Elements
+○Appending and removing Nodes
+○Using parentNode to Traverse Up the DOM
+○Using previousElementSibling, nextElementSibling and insertBefore
+○Getting All Children of a Node with children
+○Getting the First and Last Child
+● Responding to User Interaction:
+○What is an Event?
+○Functions as Parameters
+○Delaying Execution with setTimeout() Listening for Events with addEventListener()
+○The Event Object
+○PROJECTS:
+● Creating a frontend JavaScript project with all the knowledge that have been gained so far
+● PROJECT
+
+WEEK SEVEN
+Introduction To React
+○What is React
+○Leverage JSX to describe UI
+○Use create-react-app to create a new React application
+○Create reusable, focused Function components
+○Rendering UI with React:
+○Use props to pass data into a component
+○Create functional components focused on UI rather than behavior
+○Add state to components to represent mutable internal data
+● React Event:
+○Using event listeners like onclick, mouse-over to Performing action based on user event
+○React Conditional Rendering
+● WEEKLY ASSIGNMENT
+
+WEEK EIGHT
+● React Hooks:
+○What are React Hooks
+○USESTATE() hook for state in a function component
+○USEEFFECT() hook for performing side effect in function component
+○USEREF() hook for mutable value that does not cause a rerender
+● Custom Hook:
+○Create your own custom hook components
+● React Forms
+○Handling form and controlling the data when it changes value or get submitted
+○Styling React using CSS Forms
+● React Router Dom:
+○Manage App Location with react-router-dom
+○Use React Router to add different routes to applications
+○Use state to dynamically render a different "page"
+○Use React Router's Route component
+○Use React Router's Link component
+○Use React-Router-Dom useParams()
+○Use React-Router-Dom useNavigate() to redirect to home page
+● WEEKLY ASSIGNMENT
+
+
+WEEK NINE
+PROJECTS:
+● Creating a frontend React project and deploying to netlify and vercel
+PRESENTATION:
+● Students will present their React project
+
+
+WEEK TEN
+Introduction To Node Js
+● Setup Development and Environment:
+○NodeJS Installation
+● NodeJS Modules
+○Importing and Exporting modules
+● Creating Web Server:
+○HTTP Header
+○Response and Request
+○Reading and Writing
+● Node Package Manager (NPM):
+○Downloading and installing packages
+○Tracking packages
+○Version and Dependency management
+● Express JS:
+○Installing Express
+○Express Route
+
+WEEK ELEVEN
+Routing In Express Js
+● Routing & Middleware:
+○Path
+● Accessing Responses:
+○Write
+○Send
+○Status
+○Append
+○Redirect
+○sendFile
+○End
+● Request Data:
+○Get
+○Post
+○Delete
+● Controllers:
+○The site logic.
+○Gluing models and views.
+
+WEEK TWELVE
+● Form and Form Validation:
+○Exchanging data between the frontend to backend
+● DATABASE:
+○Types of Database
+○Schemas
+● MongoDB:
+○Installing Mongodb
+○Document and Collection Mongodb Driver
+○Mongodb Compass
+○Create
+○Read Update Delete
+● Schema Builder & Mongoose
+○Installing
+○Mongoose
+○CRUD
+
+WEEK THIRTEEN
+Authentication and Authorization
+● Authentication:
+○What authentication is
+○Levels of Authentication
+○OAuth
+● Using third-party packages
+○Passport Js
+● Deployment:
+○Heroku deployment
+
+WEEK FOURTEEN
+● Rest Api in Node
+○What is Rest API
+○Installing of Postman
+● Handling Api Request
+○GET Request
+○POST Request
+○PATCH Request
+○PUT Request
+○DELETE Request
+
+WEEK FIFTEEN
+●  Integrating React.js with Node Js
+●  Project
+
+WEEK SIXTEEN
+●  Project
+●  Presentation

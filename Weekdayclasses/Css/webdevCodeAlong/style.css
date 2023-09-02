@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.heroNav {
+  width: 100%;
+  background-color: aquamarine;
+}
+.heroNavContents {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem 0;
+}
+.heroNavContents h1 {
+  font-size: 2.1rem;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li {
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.secondHero{
+    width: 100%;
+    max-width: 1440px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 4rem;
+}
+.secondHeroContent-1 h1{
+    font-size: 5rem;
+}
+.secondHeroContent-1 h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: grey;
+}
+.secondHeroContent-1 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: grey;
+}
+.iconsContainer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.iconsContainer ion-icon{
+    font-size: 2rem;
+    color: grey;
+}
+.iconsContainer ion-icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.secondHeroContent-2 img {
+    width: 24rem;
+}
+
+/* media query for hero section  */
+@media (max-width:425px){
+    .secondHero{
+        flex-direction: column;
+       gap: 4rem;
+    }
+    .iconsContainer{
+        justify-content: center;
+    }
+    .secondHeroContent-1{
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0rem;
+    }
+    .secondHeroContent-1 h1{
+    font-size: 3rem;
+}
+}
+
+
+
+
+
+/* tech stack section  */
+
+.stack{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+
+}
+.stackHeader h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.stackContentsInner ion-icon{
+    font-size: 3.5rem;
+    color: aqua;
+    margin-bottom: 1rem;
+}
+.stackContentsInner p{
+    font-size: 1rem;
+    color: grey;
+    line-height: 1.6rem;
+}
+
+.stackContents{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* media query for stack section  */
+
+@media (max-width:425px){
+    .stackContents{
+        flex-direction: column;
+    }
+}
+
+
+/* code and coffee section styles  */
+
+.CoffeeSection{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.coffeeContainer{
+    display: flex;
+    align-items: center;
+    padding: 4rem 4rem;
+    gap: 3rem;
+}
+
+.coffeeContent1 img{
+    width: 23rem;
+}
+
+.coffeeContent2{
+    padding: 2rem;
+}
+.coffeeContent2Header h1{
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+.coffeeContent2Header p{
+    color: grey;
+
+}
+.coffeeContent2 p{
+    color: grey;
+}

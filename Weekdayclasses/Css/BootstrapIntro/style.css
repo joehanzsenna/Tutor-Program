@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cssClassName {
+  background-color: blue !important;
+  /* color: white; */
+}
+
+.myFirstText {
+  font-size: 10rem !important;
+}
+
+.bgChange {
+  background-color: blue !important;
+}
+
+@media (max-width: 576px) {
+  .bgChange {
+    background-color: blue !important;
+  }
+}
+@media (max-width: 768px) {
+  .bgChange {
+    background-color: rgb(0, 255, 238) !important;
+    color: white;
+  }
+}

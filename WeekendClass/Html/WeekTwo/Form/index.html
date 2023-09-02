@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section style="width: 100%; height: 100vh; background-color: green; display: flex; justify-content: center; align-items: center;">
+        <form style="width: 40%; height: 57%; background-color: yellow; border: .3rem solid whitesmoke;" >
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; justify-content: center; background-color: whitesmoke; border: 1px solid grey; text-align: center;">
+                <h4 style="background-color: rgb(47, 130, 255); border-right: .1px solid white; ">Name</h4>
+                <h4 style="background-color: rgb(47, 130, 255);">Value</h4>
+            </div>
+            <!-- <br> -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;justify-content: center; background-color: whitesmoke; border: 1px solid grey;">
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+            <!-- <br> -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;justify-content: center; background-color: whitesmoke; border: 1px solid grey;">
+                <label for="">Sex</label>
+                <div>
+                    <input type="radio" name="gender">
+                    <label for="">male</label>
+                    <br>
+                    <input type="radio" name="gender">
+                    <label for="">female</label>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;justify-content: center; background-color: whitesmoke; border: 1px solid grey;">
+                <label for="">Eye Color</label>
+                <select name="" id="">
+                    <option value="">green</option>
+                    <option value="">red</option>
+                    <option value="">yellow</option>
+                </select>
+            </div>
+            <!-- <br> -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;justify-content: center; background-color: whitesmoke; border: 1px solid grey;">
+                <label for="">Check all that apply</label>
+                <div>
+                    <input type="checkbox">
+                    <label for="">Over 6feet tall</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Over 200 pounds</label>
+                </div>
+            </div>
+            <tr>
+                <label for="">Describe your athletic ability:</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="8" style="width: 99%;">
+
+                </textarea>
+               <div style="text-align: center;">
+                 <input type="submit" value="Enter ny information">
+               </div>
+            </tr>
+        </form>
+    </section>
+</body>
+</html>

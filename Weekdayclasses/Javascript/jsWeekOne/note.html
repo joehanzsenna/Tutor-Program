@@ -1,0 +1,763 @@
+<!-- Introduction to Javascript -->
+
+JavaScript is the world's most popular programming language.
+JavaScript is the programming language of the Web.
+JavaScript is easy to learn.
+
+What Is JavaScript? JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.
+
+*JavaScript Variables
+
+Variables are Containers for Storing Data
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const
+
+In this first example, x, y, and z are undeclared variables.
+They are automatically declared when first used:
+Example
+x = 5;
+y = 6;
+z = x + y;
+
+Note
+It is considered good programming practice to always declare variables before use.
+From the examples you can guess:
+x stores the value 5
+y stores the value 6
+z stores the value 11
+
+Example using var
+var x = 5;
+var y = 6;
+var z = x + y;
+
+// variable declare with var, can be re-declared and reassigned
+var birthday = "tuesday"
+console.log(birthday);
+var birthday = "wednesday"
+console.log(birthday);
+birthday = "Thursday"
+console.log(birthday);
+
+Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+The var keyword should only be used in code written for older browsers.
+
+Example using let
+let x = 5;
+let y = 6;
+let z = x + y;
+
+Example using const
+const x = 5;
+const y = 6;
+const z = x + y;
+
+Mixed Example
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+
+The two variables price1 and price2 are declared with the const keyword.
+These are constant values and cannot be changed.
+The variable total is declared with the let keyword.
+The value total can be changed.
+
+When to Use var, let, or const?
+1. Always declare variables
+2. Always use const if the value should not be changed
+3. Always use const if the type should not be changed (Arrays and Objects)
+4. Only use let if you can't use const
+5. Only use var if you MUST support old browsers.
+
+Just like in algebra, variables hold values:
+
+let x = 5;
+let y = 6;
+Just like in algebra, variables are used in expressions:
+let z = x + y;
+
+
+*JavaScript Identifiers
+All JavaScript variables must be identified with unique names.
+These unique names are called identifiers.
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+The general rules for constructing names for variables (unique identifiers) are:
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter.
+Names can also begin with $ and _ (but we will not use it in this tutorial).
+Names are case sensitive (y and Y are different variables).
+Reserved words (like JavaScript keywords) cannot be used as names.
+
+
+*The Assignment Operator
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+x = x + 5
+
+In JavaScript, however, This makes perfect sense: it assigns the value of x + 5 to x.
+
+Note
+The "equal to" operator is written like == in JavaScript.
+
+
+**JavaScript Data Types
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Object
+8. Array
+
+
+<!-- Examples
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25"); -->
+
+
+Note
+A JavaScript variable can hold any type of data.
+The Concept of Data Types
+In programming, data types is an important concept.
+To be able to operate on variables, it is important to know something about the type.
+Without data types, a computer cannot safely solve this:
+
+let x = 16 + "Volvo";
+
+
+**JavaScript Strings
+A string (or a text string) is a series of characters like "John Doe".
+
+Strings are written with quotes. You can use single or double quotes:
+
+Example
+// Using double quotes:
+let carName1 = "Volvo XC60";
+
+// Using single quotes:
+let carName2 = 'Volvo XC60';
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+
+Example
+// Single quote inside double quotes:
+let answer1 = "It's alright";
+
+// Single quotes inside double quotes:
+let answer2 = "He is called 'Johnny'";
+
+// Double quotes inside single quotes:
+let answer3 = 'He is called "Johnny"';
+
+***JavaScript BigInt
+JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+JavaScript Integer Accuracy
+JavaScript integers are only accurate up to 15 digits:
+
+JavaScript Integer Accuracy
+JavaScript integers are only accurate up to 15 digits:
+How to Create a BigInt
+To create a BigInt, append n to the end of an integer or call BigInt():
+
+
+
+
+**JavaScript Numbers
+All JavaScript numbers are stored as decimal numbers (floating point).
+
+Numbers can be written with, or without decimals:
+
+Example
+// With decimals:
+let x1 = 34.00;
+
+// Without decimals:
+let x2 = 34;
+
+
+**JavaScript Booleans
+Booleans can only have two values: true or false.
+
+Example
+let x = 5;
+let y = 5;
+let z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+
+Booleans are often used in conditional testing.
+
+
+<!-- **JavaScript Arrays
+JavaScript arrays are written with square brackets.
+Array items are separated by commas.
+The following code declares (creates) an array called cars, containing three items (car names):
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+
+*The typeof Operator
+You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+The typeof operator returns the type of a variable or an expression:
+
+Example
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+
+Example
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number" -->
+
+**Undefined
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+Example
+let car;    // Value is undefined, type is undefined
+
+Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+Example
+car = undefined;    // Value is undefined, type is undefined
+
+Empty Values
+An empty value has nothing to do with undefined.
+An empty string has both a legal value and a type.
+Example
+let car = "";    // The value is "", the typeof is "string"
+
+
+**Null
+The null value represents the intentional absence of any object value. It is one of JavaScript's primitive values and is treated as falsy for boolean operations.
+
+// foo is known to exist now but it has no type or value:
+const foo = null;
+foo; //null
+
+
+typeof null; // "object" (not "null" for legacy reasons)
+typeof undefined; // "undefined"
+null === undefined; // false
+null == undefined; // true
+null === null; // true
+null == null; // true
+
+
+**Objects
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+
+Real Life Objects, Properties, and Methods
+In real life, a car is an object.
+A car has properties like weight and color, and methods like start and stop:
+
+All cars have the same properties, but the property values differ from car to car.
+All cars have the same methods, but the methods are performed at different times.
+
+Objects are variables too. just like you assign "Toyota" to car
+let car = "Toyota";
+But objects can contain many values.
+This code assigns many values (Toyota, Camry, white) to a variable named car:
+
+const car = {type:"Toyota", model:"Camry", color:"white"};
+
+The values are written as name:value pairs (name and value separated by a colon).
+
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+Spaces and line breaks are not important. An object definition can span multiple lines:
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+Accessing Object Properties
+You can access object properties in two ways:
+
+objectName.propertyName
+
+objectName["propertyName"]
+
+Example1
+person.lastName;
+
+Example2
+person["lastName"];
+
+**JavaScript Arrays
+
+An array is a special variable, which can hold more than one value:
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+Why Use Arrays?
+If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";
+
+However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+The solution is an array!
+An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+Creating an Array
+Using an array literal is the easiest way to create a JavaScript Array.
+
+Syntax:
+It is a common practice to declare arrays with the const keyword.
+Spaces and line breaks are not important. A declaration can span multiple lines:
+
+Example
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+You can also create an array, and then provide the elements:
+
+Example
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+Accessing Array Elements
+You access an array element by referring to the index number:
+
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+
+Note: Array indexes start with 0.
+
+[0] is the first element. [1] is the second element.
+
+Changing an Array Element
+This statement changes the value of the first element in cars:
+
+cars[0] = "Opel";
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+
+Converting an Array to a String
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Result:
+
+Banana,Orange,Apple,Mango
+
+Access the Full Array
+With JavaScript, the full array can be accessed by referring to the array name:
+
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+Arrays are Objects
+Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+But, JavaScript arrays are best described as arrays.
+
+Arrays use numbers to access its "elements". In this example, person[0] returns John:
+
+Array:
+const person = ["John", "Doe", 46];
+
+Objects use names to access its "members". In this example, person.firstName returns John:
+
+Object:
+const person = {firstName:"John", lastName:"Doe", age:46};
+
+Array Elements Can Be Objects
+JavaScript variables can be objects. Arrays are special kinds of objects.
+Because of this, you can have variables of different types in the same Array.
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+
+
+The length Property
+The length property of an array returns the length of an array (the number of array elements).
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length;
+
+<!-- lets have a pause on Objects for now let's look into strings, we'll come back to objects later -->
+
+JavaScript String Methods
+
+we have different types of string methods but i'll walk you through some of them
+
+String length
+String slice()
+String toUpperCase()
+String toLowerCase()
+
+
+JavaScript String Length
+The length property returns the length of a string:
+
+Example
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+
+
+JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: start position, and end position (end not included).
+
+Example
+Slice out a portion of a string from position 7 to position 13:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+
+
+Examples
+If you omit the second parameter, the method will slice out the rest of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7);
+
+If a parameter is negative, the position is counted from the end of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+
+This example slices out a portion of a string from position -12 to position -6:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12, -6);
+
+JavaScript String toUpperCase()
+Example
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+
+JavaScript String toLowerCase()
+Example
+let text1 = "Hello World!";       // String
+let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+
+JavaScript String indexOf()
+Examples
+Search a string for "welcome":
+let text = "Hello world, welcome to the universe.";
+let result = text.indexOf("welcome");
+
+Search a string for "Welcome":
+
+let text = "Hello world, welcome to the universe.";
+let result = text.indexOf("Welcome");
+
+Find the first occurrence of "e":
+
+let text = "Hello world, welcome to the universe.";
+text.indexOf("e");
+
+let text = "Hello world, welcome to the universe.";
+text.indexOf("e", 5);
+
+
+
+---JavaScript String concat()
+javascript concatenation is joining two strings together
+Overview. String Concatenation in JavaScript simply means appending one or more strings to the end of another string. For example, Concatenating string - "World" at the end of string "Hello " makes the final string as "Hello World".
+
+Examples
+Join two strings:
+
+let text1 = "sea";
+let text2 = "food";
+let result = text1.concat(text2);
+
+Join two strings:
+
+let text1 = "Hello";
+let text2 = "world!";
+let result = text1.concat(" ", text2);
+
+Description
+The concat() method joins two or more strings.
+The concat() method does not change the existing strings.
+The concat() method returns a new string.
+
+Join three strings:
+
+let text1 = "Hello";
+let text2 = "world!";
+let text3 = "Have a nice day!";
+let result = text1.concat(" ", text2, " ", text3);
+
+JavaScript Numbers
+JavaScript has only one type of number. Numbers can be written with or without decimals.
+Example
+let x = 3.14;    // A number with decimals
+let y = 3;       // A number without decimals
+
+Adding Numbers and Strings
+WARNING !!
+JavaScript uses the + operator for both addition and concatenation.
+Numbers are added. Strings are concatenated.
+Example
+let x = 10;
+let y = 20;
+let z = x + y;
+
+If you add two strings, the result will be a string concatenation:
+
+Example
+let x = "10";
+let y = "20";
+let z = x + y;
+
+If you add a number and a string, the result will be a string concatenation:
+
+Example
+let x = 10;
+let y = "20";
+let z = x + y;
+
+A common mistake is to expect this result to be 30:
+lets try this out
+Example
+let x = 10;
+let y = 20;
+let z = "The result is: " + x + y;
+
+A common mistake is to expect this result to be 102030:
+
+Example
+let x = 10;
+let y = 20;
+let z = "30";
+let result = x + y + z;
+
+Numeric Strings
+JavaScript strings can have numeric content:
+
+let x = 100;         // x is a number
+
+let y = "100";       // y is a string
+
+JavaScript will try to convert strings to numbers in all numeric operations:
+
+This will work:
+
+let x = "100";
+let y = "10";
+let z = x / y;
+
+This will also work:
+
+let x = "100";
+let y = "10";
+let z = x * y;
+
+
+
+
+---JavaScript Template Literals
+
+Back-Tics Syntax
+Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+let text = `Hello World!`;
+let text = `He's often called "Johnny"`;
+
+Multiline Strings
+Template literals allows multiline strings:
+
+Example
+let text =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+Interpolation
+Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation.
+
+The syntax is:
+
+${...}
+
+Variable Substitutions
+Template literals allow variables in strings:
+
+Example
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+Expression Substitution
+Template literals allow expressions in strings:
+
+Example
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+<!-- HTML Templates
+Example
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`; -->
+
+
+---JavaScript Operators
+Types of JavaScript Operators
+There are different types of JavaScript operators:
+
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+String Operators
+Logical Operators
+Bitwise Operators
+Ternary Operators
+Type Operators
+
+JavaScript Assignment
+The Assignment Operator (=) assigns a value to a variable:
+Assignment Examples
+let x = 10;
+// Assign the value 5 to x
+let x = 5;
+// Assign the value 2 to y
+let y = 2;
+
+Assignment operators assign values to JavaScript variables.
+The Addition Assignment Operator (+=) adds a value to a variable.
+Assignment
+let x = 10;
+x += 5;
+
+JavaScript Addition
+The Addition Operator + adds numbers:
+The Addition Operator (+) adds numbers:
+Adding
+let x = 5;
+let y = 2;
+let z = x + y;
+JavaScript String Addition
+The + can also be used to add (concatenate) strings:
+
+Example
+let text1 = "John";
+let text2 = "Doe";
+let text3 = text1 + " " + text2;
+
+Adding Strings and Numbers
+Adding two numbers, will return the sum, but adding a number and a string will return a string:
+
+Example
+let x = 5 + 5;
+let y = "5" + 5;
+let z = "Hello" + 5;
+
+JavaScript Multiplication
+The Multiplication Operator (*) multiplies numbers:
+
+Multiplying
+let x = 5;
+let y = 2;
+let z = x * y;
+
+JavaScript Logical Operators
+Operator	Description
+&&	logical and
+||	logical or
+!	logical not
+
+
+JavaScript Arithmetic Operators
+Arithmetic Operators are used to perform arithmetic on numbers:
+
+Arithmetic Operators Example
+let a = 3;
+let x = (100 + 50) * a;
+
+
+JavaScript Comparison and Logical Operators
+
+Comparison and Logical operators are used to test for true or false.
+
+
+Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+Given that x = 5, the table below explains the comparison operators:
+(==) equal to
+x == "5"	true
+x == 5	true
+x == 8	false
+
+===	equal value and equal type
+	x === 5	true
+  x === "5"	false
+
+!=	not equal
+  x != 8	true
+  x !== 5	false
+
+!==	not equal value or not equal type
+	x !== 5	false
+x !== "5"	true
+x !== 8	true
+
+>	greater than
+	x > 8	false
+
+<	less than
+  x < 8	true
+>=	greater than or equal to
+  x >= 8	false
+<=	less than or equal to
+  x <= 8	true
+
+
+  <!-- weekend notes  -->
+

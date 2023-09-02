@@ -1,0 +1,379 @@
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS filesCS
+
+How To Add CSS
+When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+
+External CSS
+With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+
+Inline CSS
+An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element.
+
+CSS Selectors:-
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+types of Selectors
+Simple Selectors :-
+*Element Selector
+*id selector
+*class selector
+
+grouping selectors
+universal Selector
+combinators selector
+psuedo class-Selector
+psuedo element-Selector
+
+The element Selector:-
+The element selector is the html tag name, just like calling your h1,p,div etc.
+
+The CSS id Selector:-
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+The CSS class Selector:-
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+The CSS Grouping Selector:-
+The grouping selector selects all the HTML elements with the same style definitions.
+To group selectors, separate each selector with a comma.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions) so they'll be styled together
+
+h1,h2,p {
+
+}
+
+The CSS Universal Selector:-
+The universal selector (*) selects all HTML elements on the page.
+
+
+CSS Combinators
+A combinator is something that explains the relationship between the selectors.
+div p {
+  background-color: yellow;
+}
+
+CSS Pseudo-classes
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+* Anchor Pseudo-classes
+Links can be displayed in different ways:
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+* Hover on <div>
+An example of using the :hover pseudo-class on a <div> element:
+  div:hover {
+  background-color: blue;
+}
+
+* Simple Tooltip Hover
+Hover over a <div> element to show a <p> element (like a tooltip):
+
+*  CSS - The :first-child and :last-child Pseudo-class
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+use ul li as example
+
+Match the first <p> element
+In the following example, the selector matches any <p> element that is the first child of any element:
+
+
+* CSS Pseudo-elements
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+
+* The ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+  Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+Notice the double colon notation - ::first-line versus :first-line
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+
+The ::first-letter Pseudo-element
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+
+The following example formats the first letter of the text in all <p> elements:
+
+font properties
+color properties
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+text-transform
+line-height
+
+
+CSS - The ::before Pseudo-element
+The ::before pseudo-element can be used to insert some content before the content of an element.
+
+The following example inserts an image before the content of each <h1> element:
+  Example
+h1::before {
+  content: url(smiley.gif);
+}
+
+
+  CSS - The ::after Pseudo-element
+The ::after pseudo-element can be used to insert some content after the content of an element.
+
+The following example inserts an image after the content of each <h1> element:
+
+  Example
+h1::after {
+  content: url(smiley.gif);
+}
+
+* The CSS Box Model
+In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+The box model allows us to add a border around elements, and to define space between elements.
+
+Width and Height of an Element
+In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+
+Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+Example
+This <div> element will have a total width of 350px:
+
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+Here is the calculation:
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+
+The total width of an element should be calculated like this:
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+CSS Flexbox
+
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+The flexbox properties are supported in all modern browsers.
+
+Flexbox Elements
+To start using the Flexbox model, you need to first define a flex container.
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+The flex-direction Property
+The flex-direction property defines in which direction the container wants to stack the flex items.
+Example
+The column value stacks the flex items vertically (from top to bottom):
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+Example
+The column-reverse value stacks the flex items vertically (but from bottom to top):
+Then the row-reverse value stacks the flex items horizontally (but from right to left):
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+Example
+The row value stacks the flex items horizontally (from left to right):
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+The flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not.
+
+The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+
+
+The flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not.
+
+The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+The wrap value specifies that the flex items will wrap if necessary:
+The nowrap value specifies that the flex items will not wrap (this is default):
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order:
+
+The flex-flow Property
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+
+Example
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+Perfect Centering
+In the following example we will solve a very common style problem: perfect centering.
+Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+
+The CSS Flexbox Container Properties
+The following table lists all the CSS Flexbox Container properties:
+
+Property	Description
+align-content	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+align-items	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display	Specifies the type of box used for an HTML element
+flex-direction	Specifies the direction of the flexible items inside a flex container
+flex-flow	A shorthand property for flex-direction and flex-wrap
+flex-wrap	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+justify-content	Horizontally aligns the flex items when the items do not use all available space on the main-axis
+
+
+
+
+
+<!-- CSS Position -->
+
+CSS Layout - The position Property
+
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+position: static;
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+This <div> element has position: static;
+Here is the CSS that is used:
+
+position: relative;
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+This <div> element has position: relative;
+Here is the CSS that is used:
+
+position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Here is a simple example:
+
+position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+

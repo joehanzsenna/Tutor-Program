@@ -1,0 +1,478 @@
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS filesCS
+
+How To Add CSS
+When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+
+External CSS
+With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+An external style sheet can be written in any text editor, and must be saved with a .css extension.
+
+The external .css file should not contain any HTML tags.
+
+Here is how the "mystyle.css" file looks:
+
+"mystyle.css"
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+Note: Do not add a space between the property value (20) and the unit (px):
+Incorrect (space): margin-left: 20 px;
+Correct (no space): margin-left: 20px;
+
+Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the <style> element, inside the head section.
+    /*
+Example
+Internal styles are defined within the <style> element, inside the <head> section of an HTML page:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> */
+
+Inline CSS
+An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+Example
+Inline styles are defined within the "style" attribute of the relevant element:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+Multiple Style Sheets
+If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+Assume that an external style sheet has the following style for the <h1> element:
+
+h1 {
+  color: navy;
+}
+
+Then, assume that an internal style sheet also has the following style for the <h1> element:
+
+h1 {
+  color: orange;
+}
+Example
+If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange":
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+  color: orange;
+}
+</style>
+</head>
+
+Example
+However, if the internal style is defined before the link to the external style sheet, the <h1> elements will be "navy":
+
+<head>
+<style>
+h1 {
+  color: orange;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+Cascading Order
+What style will be used when there is more than one style specified for an HTML element?
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+
+CSS Selectors
+A CSS selector selects the HTML element(s) you want to style.
+
+CSS Selectors
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+
+The CSS element Selector
+The element selector selects HTML elements based on the element name.
+Example
+Here, all <p> elements on the page will be center-aligned, with a red text color:
+
+p {
+  text-align: center;
+  color: red;
+}
+
+
+The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+Example
+The CSS rule below will be applied to the HTML element with id="para1":
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+Example
+In this example all HTML elements with class="center" will be red and center-aligned:
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+You can also specify that only specific HTML elements should be affected by a class.
+Example
+In this example only <p> elements with class="center" will be red and center-aligned:
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+HTML elements can also refer to more than one class.
+Example
+In this example the <p> element will be styled according to class="center" and to class="large":
+
+<p class="center large">This paragraph refers to two classes.</p>
+
+The CSS Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+
+Example
+The CSS rule below will affect every HTML element on the page:
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+The CSS Grouping Selector
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+It will be better to group the selectors, to minimize the code.
+
+To group selectors, separate each selector with a comma.
+
+Example
+
+In this example we have grouped the selectors from the code above:
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+types of Selectors
+Simple Selector :-
+*Element Selector
+*id selector
+*class selector
+
+grouping selectors
+universal Selector
+combining selector
+psuedo class-Selector
+psuedo element-Selector
+
+
+
+
+
+box-sizing: boder box
+
+border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.
+
+CSS Pseudo-classes
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+
+Hover on <div>
+An example of using the :hover pseudo-class on a <div> element:
+
+Example
+div:hover {
+  background-color: blue;
+}
+
+Simple Tooltip Hover
+Hover over a <div> element to show a <p> element (like a tooltip):
+
+Hover over me to show the <p> element.
+Example
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+
+CSS Pseudo-elements
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+Syntax
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+
+}
+
+The ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+Example
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+* The CSS Box Model
+In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+The box model allows us to add a border around elements, and to define space between elements.
+
+Width and Height of an Element
+In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+
+Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+Example
+This <div> element will have a total width of 350px:
+
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+Here is the calculation:
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+
+The total width of an element should be calculated like this:
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+
+
+CSS Flexbox
+
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+The flexbox properties are supported in all modern browsers.
+
+Flexbox Elements
+To start using the Flexbox model, you need to first define a flex container.
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+The flex-direction Property
+The flex-direction property defines in which direction the container wants to stack the flex items.
+Example
+The column value stacks the flex items vertically (from top to bottom):
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+Example
+The column-reverse value stacks the flex items vertically (but from bottom to top):
+Then the row-reverse value stacks the flex items horizontally (but from right to left):
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+Example
+The row value stacks the flex items horizontally (from left to right):
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+The flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not.
+
+The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+
+
+The flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not.
+
+The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+The wrap value specifies that the flex items will wrap if necessary:
+The nowrap value specifies that the flex items will not wrap (this is default):
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order:
+
+The flex-flow Property
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+
+Example
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+Perfect Centering
+In the following example we will solve a very common style problem: perfect centering.
+Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+
+

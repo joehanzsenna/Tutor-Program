@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* psuedo Classes  */
+section {
+  display: flex;
+  gap: 3rem;
+  /* background-color: blue; */
+  height: auto;
+}
+.Link1:link {
+  background-color: green;
+  text-decoration: none;
+}
+.Link2:visited {
+  color: red;
+}
+.Link3:active {
+  background-color: aqua;
+  color: black;
+}
+.Link4:hover {
+  font-size: 5rem;
+  background-color: yellow;
+}
+.freshLink {
+  color: red;
+  text-decoration: none;
+}
+.freshLink:link {
+  color: yellow;
+}
+.freshLink:visited {
+  color: green;
+}
+.freshLink:active {
+  color: rgb(220, 26, 226);
+}
+
+
+ul{
+    margin: 5rem 0;
+    padding: 2rem;
+}
+/* ul li{
+    background-color: red;
+} */
+/* ul li:first-child{
+    background-color: red;
+}
+ul li:last-child{
+    background-color: green;
+} */
+
+ul li:nth-child(5){
+    background-color: blue;
+}
+ul li:nth-child(3){
+    background-color: blue;
+}
+ul li:nth-child(even){
+    background-color: rgb(9, 255, 0);
+}
+ul li:nth-child(odd){
+    background-color: rgb(255, 217, 0);
+}
+
+/* psuedo Classes */
+
+.psuedoEl{
+    width: 80%;
+    /* height: 30rem; */
+    padding: 2rem;
+    background-color: green;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.psuedoEl p::first-line{
+    background-color: #00ffff;
+    letter-spacing: 5rem;
+
+}
+.psuedoEl h1::first-letter{
+    background-color: aqua;
+    letter-spacing: 5rem;
+    font-size: 4rem;
+
+}
+.h4{
+    font-size: 3rem;
+}
+/* .h4::before{
+    content: url(../github.png); */
+    /* background-color: aquamarine;
+    width: 2rem;
+    height: 2rem; */
+/* } */
+/* .h4::after{
+    content: url(../github.png);
+    background-size: 2rem; */
+    /* background-color: aquamarine;
+    width: 2rem;
+    height: 2rem; */
+/* } */
+
+/* .h4::before {
+  content: "BEFORE";
+
+} */
+.h4::before {
+    /* background-image: url(./github.png);
+    background-size: 5rem 5rem;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    transform: translateX(4rem); */
+    content:"";
+    height: 10rem;
+    width: 10rem;
+    background: #00ffff;
+    position: absolute;
+    z-index: -1;
+}
+
+.h4::after {
+    background-image: url(./github.png);
+    background-size: 5rem 5rem;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    content:"";
+    transform: translateX(-4rem);
+}
+/* .h4::after {
+  content: "AFTER";
+  content: '';
+  background-image: url(./github.png);
+} */
+
+
+
+
+
+
+
+
+/* grouping selectors  */
+
+/* h1, h2, h3, p, span {
+    background-color: red;
+} */

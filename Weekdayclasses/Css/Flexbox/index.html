@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        height: 30rem;
+        display: flex;
+        background-color: blue;
+        gap: 1rem;
+        align-items: baseline;
+        align-items: start;
+        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+      }
+      .flex-container div {
+        background-color: green;
+        padding: 4rem;
+        font-size: 2rem;
+        color: white;
+      }
+      /* .menu li:first-child{
+            color: yellow;
+        } */
+      /* .menu li:last-child{
+            color: yellow;
+        } */
+      /* .p i:first-child{
+            color: red;
+        } */
+      /* .p i:last-child{
+            color: red;
+        } */
+      /* .p i:nth-child(1){
+            color: yellow;
+        } */
+      /* .p i:nth-child(2){
+            color: yellow;
+        } */
+        /* .p i:nth-child(even){
+            color: yellow;
+        } */
+        /* .p i:nth-child(odd){
+            color: yellow;
+        } */
+      .p:first-child i {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div style="background-color: red">A</div>
+      <div style="background-color: red">B</div>
+      <div style="background-color: red">C</div>
+      <!-- <div style="background-color: red;">D</div>
+      <div style="background-color: red;">E</div>
+      <div style="background-color: red;">F</div>
+      <div style="background-color: red;">G</div>
+      <div style="background-color: red;">H</div>
+      <div style="background-color: red;">I</div> -->
+    </div>
+    <div style="width: 50%; height: 10rem; background-color: green">
+      <ul class="menu">
+        <li>
+          text in <br />
+          li
+        </li>
+        <li>text in li</li>
+        <li>text in li</li>
+        <li>text in li</li>
+        <li>text in li</li>
+      </ul>
+
+      <p class="p"><i>first i child</i> <i>second i child</i> <i>third i child</i></p>
+    </div>
+  </body>
+</html>

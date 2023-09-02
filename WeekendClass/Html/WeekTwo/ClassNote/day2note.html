@@ -1,0 +1,91 @@
+box-sizing: boder box
+
+border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.
+
+CSS Pseudo-classes
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+
+Hover on <div>
+An example of using the :hover pseudo-class on a <div> element:
+
+Example
+div:hover {
+  background-color: blue;
+}
+
+Simple Tooltip Hover
+Hover over a <div> element to show a <p> element (like a tooltip):
+
+Hover over me to show the <p> element.
+Example
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+
+CSS Pseudo-elements
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+Syntax
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+The ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+Example
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}

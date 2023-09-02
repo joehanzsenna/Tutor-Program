@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- google fonts roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main container  -->
+    <section class="mainContainer">
+      <!-- subcontainer  -->
+      <div class="subContainer">
+        <!-- first div  -->
+        <div class="contentBlue">
+          <h1 class="header1">Your Result</h1>
+          <div class="blueCircle">
+            <span class="blueCircleHeader">76</span>
+            <span class="blueCircleText">of 100</span>
+          </div>
+          <div class="bottomSection">
+            <h2 class="header2">Great</h2>
+            <p class="bottomText">
+              You scored higher than 65% of the problem you have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+
+        <!-- second div -->
+        <div class="contentWhite">
+          <h1 class="summaryHeader">summary</h1>
+          <div class="summaryContents">
+
+            <div class="summaryFlex">
+              <span class="summaryAlign" style="color: #F55;">
+                <img src="../assets/images/icon-reaction.svg" alt=""> Reaction
+              </span>
+              <p>80 <span class="numberColor">/ 100</span></p>
+            </div>
+
+            <div class="summaryFlex">
+              <span class="summaryAlign" style="color: #FFB21E;">
+                <img src="../assets/images/icon-memory.svg" alt=""> Memory
+              </span>
+              <p>92 <span class="numberColor">/ 100</span></p>
+            </div>
+
+            <div class="summaryFlex">
+              <span class="summaryAlign" style="color: #00BB8F;">
+                <img src="../assets/images/icon-verbal.svg" alt=""> Verbal
+              </span>
+              <p>61 <span class="numberColor">/ 100</span></p>
+            </div>
+
+            <div class="summaryFlex">
+              <span class="summaryAlign" style="color: #1125D6;">
+                <img src="../assets/images/icon-visual.svg" alt=""> Visual
+              </span>
+              <p>72 <span class="numberColor">/ 100</span></p>
+            </div>
+
+          </div>
+
+          <button class="summary-btn">Continue</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

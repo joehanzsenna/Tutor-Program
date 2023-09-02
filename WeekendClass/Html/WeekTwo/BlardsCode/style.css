@@ -1,0 +1,65 @@
+/* Universal selector */
+* {
+  margin: 0 5%;
+}
+
+/* Generic selector, tags such as body, p, div, img etc */
+body {
+  background-color: #00ffff;
+}
+h1 {
+  background-color: #000000;
+  color: azure;
+  padding: 10px;
+}
+#special {
+  background-color: beige;
+  border: 2px solid #223344;
+  color: dodgerblue;
+  padding: 10px;
+}
+div {
+  background-color: blue;
+  padding: 15px;
+  color: aquamarine;
+}
+
+/* class selector */
+.inner-para {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.para {
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=");
+  background-size: cover;
+}
+.para2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.inner-para ul {
+  list-style-type: none;
+  background-color: yellow;
+  margin-top: 10px;
+}
+
+ul li:nth-child(1) {
+  background-color: green;
+}
+
+.outer img {
+  width: 50%;
+}
+/* .outer img:nth-child(2){
+    display: none;
+} */
+
+.inner-para ul li:nth-child(odd) {
+  background-color: azure;
+  color: red;
+  padding: 5px;
+}

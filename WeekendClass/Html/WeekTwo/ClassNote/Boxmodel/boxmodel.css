@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.boxModel{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, orange,darkorange,rgb(196, 13, 13) );
+}
+
+.container{
+    width: 30rem;
+    text-align: center;
+    padding: 80px;
+    align-items: center;
+    border: 80px solid green;
+    background-color: blue;
+}
+.content{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    padding: 1rem;
+
+}
